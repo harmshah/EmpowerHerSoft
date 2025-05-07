@@ -1,6 +1,8 @@
 import React from "react";
-import "../styles/SignaturePrograms.css"; // <-- Make sure to create and import this
+import "../styles/SignaturePrograms.css"; // Ensure you have the styles properly imported
+import FinHerImage from "../assets/Fund.jpg"; // Make sure you have the image
 
+// Define the programs array
 const programs = [
   "The H.E.R. Framework",
   "HER Quiet Confidence",
@@ -36,39 +38,71 @@ const programs = [
 export default function SignaturePrograms() {
   return (
     <div className="programs-container">
-      <h1 className="programs-title my-3" style={{ fontFamily: "cursive", color: "black" }} >Programs Built for Her</h1>
-
+      <h1 style={{ fontFamily: "cursive", color: "black", padding: "1rem" }}>
+        Programs Built for Her
+      </h1>
+      {/* Featured Program Section with Image and Animation */}
       <section className="featured-program">
-        <h5 style={{ fontWeight: "bold", color: "black" }}>FinHER: Financial Support on Her Terms</h5>
-        <p>
-          Because every woman deserves the means to rise, without proving, justifying, or conforming.
-          <br /><br />
-          At Empower Her Soft, we believe financial independence is not a privilege, but a right.
-          And women do not need to follow traditional paths, fit societal boxes, or meet someone else’s definition of “worthy” to access support.
-          <br /><br />
-          That’s why FinHER exists, a compassionate financial support initiative offering:
-        </p>
-        <p>
-          Microgrants to help launch ideas, return to school, rebuild careers, or simply get through a hard season, 
-          No red tape: we see the story, the spirit, not the résumé or credit score, 
-          Emotional money coaching: because financial empowerment is also healing, 
-          Workshops on budgeting, investing, and spending money wisely, 
-          Community funds and peer-nominated support — women lifting women.
-        </p>
-        <p>
-          We reject the idea that support must come with shame. Whether she is rebuilding after divorce, launching a side business,
-          or going back to school at 50 — she is enough. FinHER is here to remind her that she never had to ask for permission.
-        </p>
+        <div className="featured-program-card">
+          <h4 className="featured-program-title">
+            FinHER: Financial Support on Her Terms
+          </h4>
+
+          <p className="featured-program-description">
+            Because every woman deserves the means to rise, without proving,
+            justifying, or conforming.
+          </p>
+
+          <p>
+            At Empower Her Soft, we believe financial independence is not a
+            privilege, but a right. And women do not need to follow traditional
+            paths, fit societal boxes, or meet someone else’s definition of
+            “worthy” to access support. That’s why FinHER exists, a
+            compassionate financial support initiative offering:
+          </p>
+
+          <ul className="program-details-list">
+            <li>
+              Microgrants to help launch ideas, return to school, rebuild
+              careers, or simply get through a hard season.
+            </li>
+            <li>
+              No red tape: we see the story, the spirit, not the résumé or
+              credit score.
+            </li>
+            <li>
+              Emotional money coaching: because financial empowerment is also
+              healing.
+            </li>
+            <li>
+              Workshops on budgeting, investing, and spending money wisely.
+            </li>
+            <li>
+              Community funds and peer-nominated support — women lifting women.
+            </li>
+          </ul>
+
+          <p>
+            We reject the idea that support must come with shame. Whether she is
+            rebuilding after divorce, launching a side business, or going back
+            to school at 50 — she is enough. FinHER is here to remind her that
+            she never had to ask for permission.
+          </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="featured-program-image">
+          <img src={FinHerImage} alt="FinHER" className="featured-image" />
+        </div>
       </section>
 
+      {/* Signature Programs List */}
       <section className="signature-programs-list">
-        <h3 style={{ fontFamily: "cursive", color: "black" }}>Explore All Signature Programs</h3><br/>
+        <h3>Explore All Signature Programs</h3>
         <div className="programs-grid">
           {programs.map((title, index) => (
             <div className="program-card" key={index}>
-              <h6>{title}</h6>
-              {/* Optional internal link */}
-              {/* <Link to={`/programs/${slugify(title)}`}>Learn More</Link> */}
+              <h6 className="program-card-title">{title}</h6>
             </div>
           ))}
         </div>

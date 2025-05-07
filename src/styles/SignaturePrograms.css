@@ -1,55 +1,144 @@
 .programs-container {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: auto;
-    /* font-family: 'Segoe UI', sans-serif; */
-    color: black;
+  padding: 2rem;
+  /* background-color: #fff7ef; */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* ======= Header ======= */
+.programs-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease;
+}
+
+/* ======= Featured Program ======= */
+.featured-program {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f0f0f0;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  margin-bottom: 3rem;
+  animation: slideInUp 1s ease;
+}
+
+.featured-program-card {
+  flex: 1;
+  min-width: 300px;
+}
+
+.featured-program-title {
+  font-family: cursive;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.featured-program-description {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.program-details-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* ======= Image Section ======= */
+.featured-program-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+/* ======= Signature Program List ======= */
+.signature-programs-list {
+  margin-top: 2rem;
+}
+
+.signature-programs-list h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-family: cursive;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.program-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.program-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ======= Animations ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
-  .programs-title {
-    font-family: 'Cursive', sans-serif;
-    text-align: center;
-    color: black;
-    margin-bottom: 2rem;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======= Responsive ======= */
+@media (max-width: 768px) {
   .featured-program {
-    background-color: #E1E1DF;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .featured-program ul {
-    padding-left: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+  .featured-program-card,
+  .featured-program-image {
+    max-width: 100%;
   }
-  
-  .signature-programs-list h2 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  
+
   .programs-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
-  
-  .program-card {
-    font-size: small;
-    background-color: #E1E1DF;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-  }
-  
-  .program-card:hover {
-    transform: translateY(-4px);
-    background-color: lightgray;
-  }
-  
+}

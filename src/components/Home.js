@@ -25,11 +25,8 @@ export default function Home() {
       <div className="home-header">
         <h1>Empower Her Soft</h1>
         <h4>
-          “Every woman reaches a point where she asks: What now? What’s next—for me?”
-        </h4>
-        <h5>
           “Empowering women to rise again—with softness, strength, and sisterhood.”
-        </h5>
+        </h4>
         <button className="scroll-button" onClick={scrollToNextSection}>
           Our Story
         </button>
