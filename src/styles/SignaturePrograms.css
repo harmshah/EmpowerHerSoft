@@ -1,0 +1,55 @@
+.programs-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    /* font-family: 'Segoe UI', sans-serif; */
+    color: black;
+  }
+  
+  .programs-title {
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    color: black;
+    margin-bottom: 2rem;
+  }
+  
+  .featured-program {
+    background-color: #E1E1DF;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .featured-program ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .signature-programs-list h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .program-card {
+    font-size: small;
+    background-color: #E1E1DF;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-4px);
+    background-color: lightgray;
+  }
+  

@@ -1,0 +1,56 @@
+/* about.css */
+
+h4{
+    font-family: cursive;
+    color: black;
+  }
+  .about-container {
+    background-color: #E1E1DF; /* light beige background color */
+    border-radius: 10px; /* rounded corners */
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .bullet-points {
+    list-style-type: disc; /* Display bullet points */
+    padding: 0; /* Add left padding to make space for bullets */
+    margin: 0; /* Remove default margin */
+    text-align: left;
+  }
+  
+  .bullet-points li {
+    margin-bottom: 1rem; /* Add space between each item */
+    padding-left: 0; /* Remove padding between bullet and text */
+  }
+  
+  .bullet-points li::marker {
+    color: black; /* Change bullet point color */
+    font-weight: bold;
+  }
+  
+
+
+
+
+  .scroll-button {
+    background-color: black;
+    color: #E1E1DF;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .scroll-button:hover {
+    background-color: grey;
+  }
+
+  

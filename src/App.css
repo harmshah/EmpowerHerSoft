@@ -1,5 +1,10 @@
+
 .App {
   text-align: center;
+  font-family: Georgia, serif;
+  font-weight: lighter;
+  background-color: white;
+
 }
 
 .App-logo {

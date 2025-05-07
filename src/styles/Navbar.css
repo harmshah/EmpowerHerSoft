@@ -1,0 +1,35 @@
+.custom-navbar {
+    background-color: black;
+    font-size: small;
+  }
+  
+  .custom-title {
+    color: #E9E4D6;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  .custom-title:hover {
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #E9E4D6 !important;
+    transition: color 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ffffff !important;
+  }
+  
+  .custom-toggler-icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Highlight for active link */
+  .active-link {
+    font-weight: bold;
+    color: #ffffff !important;
+  }
+  

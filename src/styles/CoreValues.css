@@ -1,0 +1,37 @@
+.core-container {
+    text-align: center;
+    padding: 2rem;
+    color: black;
+  }
+  
+  .core-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(60vh, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .core-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  
+  .core-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+  
+  .core-card .core-description {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: black;
+  }
+  
+  .core-card:hover .core-description {
+    opacity: 1;
+  }
+  
