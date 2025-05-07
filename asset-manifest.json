@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/EmpowerHerSoft/static/css/main.c25a6cfc.css",
+    "main.js": "/EmpowerHerSoft/static/js/main.6dd5b496.js",
+    "static/js/453.b0291010.chunk.js": "/EmpowerHerSoft/static/js/453.b0291010.chunk.js",
+    "static/media/Homepage.jpg": "/EmpowerHerSoft/static/media/Homepage.6e28e123708258b3a599.jpg",
+    "static/media/Logo.jpg": "/EmpowerHerSoft/static/media/Logo.cc3c071c1d5a02eb6b3c.jpg",
+    "index.html": "/EmpowerHerSoft/index.html",
+    "main.c25a6cfc.css.map": "/EmpowerHerSoft/static/css/main.c25a6cfc.css.map",
+    "main.6dd5b496.js.map": "/EmpowerHerSoft/static/js/main.6dd5b496.js.map",
+    "453.b0291010.chunk.js.map": "/EmpowerHerSoft/static/js/453.b0291010.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c25a6cfc.css",
+    "static/js/main.6dd5b496.js"
+  ]
+}
