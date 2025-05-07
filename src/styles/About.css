@@ -1,35 +1,97 @@
-/* about.css */
+/* General Page Styling */
+.about-page {
+  padding: 2rem 1rem;
+  background: #fff;
+}
 
-h4{
-    font-family: cursive;
-    color: black;
+/* Page Title */
+.about-title {
+  font-family: cursive;
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Section Styling */
+.about-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  min-height: 300px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Image Styling */
+.section-image {
+  width: 250px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  align-self: center;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* image shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.section-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25); /* image hover effect */
+}
+
+/* Text Container */
+.section-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section Headings */
+.section-heading {
+  font-family: cursive;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .about-container {
-    background-color: #E1E1DF; /* light beige background color */
-    border-radius: 10px; /* rounded corners */
-    padding: 20px;
-    width: 90%;
-    margin: 20px auto;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    line-height: 1.5;
-    color: black;
+}
+
+/* Optional delay classes */
+.slide-in-left {
+  animation-delay: 0.2s;
+}
+
+.slide-in-right {
+  animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
-  .bullet-points {
-    list-style-type: disc; /* Display bullet points */
-    padding: 0; /* Add left padding to make space for bullets */
-    margin: 0; /* Remove default margin */
-    text-align: left;
+
+  .section-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
   }
-  
-  .bullet-points li {
-    margin-bottom: 1rem; /* Add space between each item */
-    padding-left: 0; /* Remove padding between bullet and text */
+
+  .section-content {
+    padding-top: 1rem;
   }
-  
-  .bullet-points li::marker {
-    color: black; /* Change bullet point color */
-    font-weight: bold;
-  }
-  
+}

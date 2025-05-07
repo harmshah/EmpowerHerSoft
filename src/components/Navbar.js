@@ -60,9 +60,9 @@ export default function Navbar(props) {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {[
               { path: '/', label: 'Home' },
+              { path: '/whoweempower', label: 'Who We Empower' },
               { path: '/corevalues', label: 'Core Values' },
               { path: '/signatureprograms', label: 'Signature Programs' },
-              { path: '/whoweempower', label: 'Who We Empower' },
               { path: '/wallofhonor', label: 'Wall of Honor' },
               { path: '/about', label: 'About Us' }
             ].map(link => (
