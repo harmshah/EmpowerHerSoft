@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/EmpowerHerSoft/static/css/main.c25a6cfc.css",
-    "main.js": "/EmpowerHerSoft/static/js/main.94256507.js",
+    "main.css": "/EmpowerHerSoft/static/css/main.5a7af929.css",
+    "main.js": "/EmpowerHerSoft/static/js/main.b7fef71f.js",
     "static/js/453.b0291010.chunk.js": "/EmpowerHerSoft/static/js/453.b0291010.chunk.js",
     "static/media/Homepage.jpg": "/EmpowerHerSoft/static/media/Homepage.6e28e123708258b3a599.jpg",
     "static/media/Logo.jpg": "/EmpowerHerSoft/static/media/Logo.cc3c071c1d5a02eb6b3c.jpg",
+    "static/media/Women.jpg": "/EmpowerHerSoft/static/media/Women.763e3ab8febbdbbe2464.jpg",
+    "static/media/EveryWomen.jpg": "/EmpowerHerSoft/static/media/EveryWomen.17b52139eac78ebe4c3c.jpg",
+    "static/media/Vision.jpg": "/EmpowerHerSoft/static/media/Vision.994012add1c58cb39ed5.jpg",
+    "static/media/Mission.jpg": "/EmpowerHerSoft/static/media/Mission.e42e864e1ae30cc58e08.jpg",
+    "static/media/Fund.jpg": "/EmpowerHerSoft/static/media/Fund.08d2458ae4521f9ec75a.jpg",
+    "static/media/Promise.jpg": "/EmpowerHerSoft/static/media/Promise.892118f6a4575b0d0456.jpg",
     "index.html": "/EmpowerHerSoft/index.html",
-    "main.c25a6cfc.css.map": "/EmpowerHerSoft/static/css/main.c25a6cfc.css.map",
-    "main.94256507.js.map": "/EmpowerHerSoft/static/js/main.94256507.js.map",
+    "main.5a7af929.css.map": "/EmpowerHerSoft/static/css/main.5a7af929.css.map",
+    "main.b7fef71f.js.map": "/EmpowerHerSoft/static/js/main.b7fef71f.js.map",
     "453.b0291010.chunk.js.map": "/EmpowerHerSoft/static/js/453.b0291010.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c25a6cfc.css",
-    "static/js/main.94256507.js"
+    "static/css/main.5a7af929.css",
+    "static/js/main.b7fef71f.js"
   ]
 }
