@@ -2,6 +2,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from "./components/ScrollToTop";
 import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
@@ -10,10 +11,12 @@ import SignaturePrograms from './components/SignaturePrograms';
 import WhoWeEmpower from './components/WhoWeEmpower';
 import WallOfHonor from './components/WallOfHonor';
 import JoinUs from './components/JoinUs';
+
 function App() {
   return (
     <div className='App'>
       <Navbar title = "Her Soft"/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
