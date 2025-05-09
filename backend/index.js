@@ -6,16 +6,23 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+//app.use(cors());
+// Enable CORS
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
-// MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+
+//
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB connected"))
-.catch((err) => console.error("MongoDB connection error:", err));
+.catch((err) => {
+  if (err.code === 'ENOTFOUND') {
+    console.error("DNS resolution failed. Please check your MongoDB connection string.");
+  } else {
+    console.error("MongoDB connection error:", err);
+  }
+});
+
 
 // Mongoose Schema
 const NominationSchema = new mongoose.Schema({

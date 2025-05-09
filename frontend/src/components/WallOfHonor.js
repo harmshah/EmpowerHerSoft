@@ -19,8 +19,8 @@ export default function WallOfHonor() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can replace the below fetch URL with your backend endpoint
-    fetch("/api/wall-of-honor", {
+    fetch("https://honor-backend-17fo.onrender.com/api/wall-of-honor", {
+      // ↑ Replace with actual backend URL or use "/api/..." if proxied in Vercel
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -46,26 +46,21 @@ export default function WallOfHonor() {
 
   return (
     <div className="honor-wrapper">
-      <h1>
-      Honoring the Women Who Raised Us.
-      </h1>
+      <h1>Honoring the Women Who Raised Us.</h1>
 
       <div className="text-card about-container">
         <p className="description">
-          Some women never asked to lead, but they led with their love. Some
-          women never had a stage, but their quiet strength lit the path. Some
-          women may not know it, but they empowered us simply by believing in
-          us, by saying “you can,” or by standing beside us when no one else
-          did.
-          <br />
-          <br />
-          At Empower Her Soft, we honor them. The mothers. The sisters. The
-          mentors. The friends. The teachers who saw something in us before we
-          saw it in ourselves. The grandmothers whose quiet courage became the
-          foundation of our rise. The coworkers who whispered, “You’ve got
-          this.”
-          <br />
-          <br />
+          Honoring the Women Who Raised Us. Some women never asked to lead, but
+          they led with their love. Some women never had a stage, but their
+          quiet strength lit the path. Some women may not know it, but they
+          empowered us simply by believing in us, by saying “you can,” or by
+          standing beside us when no one else did. At Empower Her Soft, we honor
+          them. The mothers. The sisters. The mentors. The friends. The teachers
+          who saw something in us before we saw it in ourselves. The
+          grandmothers whose quiet courage became the foundation of our rise.
+          The coworkers who whispered, “You’ve got this.”
+          <br/>
+          <br/>
           Board members and team leaders are invited to nominate these women,
           the ones who lifted them up, shaped their journeys, and reminded them
           they were never alone. These women become part of our living legacy,
@@ -84,13 +79,16 @@ export default function WallOfHonor() {
               <p className="form-subtitle text-center">
                 Use this form to share the story of a woman who inspires you.
               </p>
-              <form className="nomination-form">
+
+              <form className="nomination-form" onSubmit={handleSubmit}>
                 <div className="mb-3">
                   <input
                     type="text"
                     className="form-control"
-                    id="name"
+                    name="yourName"
                     placeholder="Enter your name"
+                    value={formData.yourName}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -98,8 +96,10 @@ export default function WallOfHonor() {
                   <input
                     type="email"
                     className="form-control"
-                    id="email"
+                    name="email"
                     placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
                   />
                 </div>
 
@@ -107,17 +107,54 @@ export default function WallOfHonor() {
                   <input
                     type="text"
                     className="form-control"
-                    id="nomineeName"
-                    placeholder="Enter nominee's name"
+                    name="honoreeName"
+                    placeholder="Name of the Woman You are Honoring"
+                    value={formData.honoreeName}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="relationship"
+                    placeholder="Her relationship to you"
+                    value={formData.relationship}
+                    onChange={handleChange}
                   />
                 </div>
 
                 <div className="mb-3">
                   <textarea
                     className="form-control"
-                    id="story"
+                    name="story"
                     rows="5"
-                    placeholder="Why are you nominating her? Share her story..."
+                    placeholder="Share Her Story or Why She Inspires You"
+                    value={formData.story}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+
+                <div className="mb-3">
+                  <textarea
+                    className="form-control"
+                    name="descriptionWord"
+                    rows="2"
+                    placeholder="One word that describes her"
+                    value={formData.descriptionWord}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
+
+                <div className="mb-3">
+                  <textarea
+                    className="form-control"
+                    name="shareConsent"
+                    rows="2"
+                    placeholder="Can we share her name on the Wall of Honor? (Yes/No)"
+                    value={formData.shareConsent}
+                    onChange={handleChange}
                   ></textarea>
                 </div>
 
