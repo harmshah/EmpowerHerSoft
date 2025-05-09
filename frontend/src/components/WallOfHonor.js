@@ -50,104 +50,86 @@ export default function WallOfHonor() {
         Wall of Honor
       </h1>
 
-      <div className="about-container animated fadeIn">
+      <div className="text-card about-container">
         <p className="description">
           Honoring the Women Who Raised Us. <br />
           <br />
-          Some women never asked to lead, but they led with their love...
+          Some women never asked to lead, but they led with their love. Some
+          women never had a stage, but their quiet strength lit the path. Some
+          women may not know it, but they empowered us simply by believing in
+          us, by saying “you can,” or by standing beside us when no one else
+          did.
           <br />
           <br />
-          Board members and team leaders are invited to nominate these women—
+          At Empower Her Soft, we honor them. The mothers. The sisters. The
+          mentors. The friends. The teachers who saw something in us before we
+          saw it in ourselves. The grandmothers whose quiet courage became the
+          foundation of our rise. The coworkers who whispered, “You’ve got
+          this.”
+          <br />
+          <br />
+          Board members and team leaders are invited to nominate these women,
           the ones who lifted them up, shaped their journeys, and reminded them
-          they were never alone.
+          they were never alone. These women become part of our living legacy,
+          woven into our story, named in our spaces, and held with the deepest
+          reverence. Because this is what women supporting women looks like, not
+          just in boardrooms or workshops, but in everyday gestures, whispered
+          encouragement, and generational strength passed hand to hand.
         </p>
       </div>
 
-      <div className="form-container animated slideInUp">
-        <h2 className="form-title">
-          Empower Her Soft - Wall of Honor Nomination
-        </h2>
-        <p className="form-subtitle">
-          This is your space to honor the women who have inspired, empowered, or
-          lifted you.
-        </p>
-        <form className="nomination-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label>Your Name:</label>
-            <input
-              type="text"
-              name="yourName"
-              value={formData.yourName}
-              onChange={handleChange}
-              required
-            />
-          </div>
+      <div className="container my-5">
+        <div className="row justify-content-center">
+          <div className="col-md-8 col-lg-6">
+            <div className="card shadow-sm p-4">
+              <h2 className="form-title text-center">Nominate a Woman</h2>
+              <p className="form-subtitle text-center">
+                Use this form to share the story of a woman who inspires you.
+              </p>
+              <form className="nomination-form">
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
 
-          <div className="form-group">
-            <label>Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                  />
+                </div>
 
-          <div className="form-group">
-            <label>Name of the Woman You are Honoring:</label>
-            <input
-              type="text"
-              name="honoreeName"
-              value={formData.honoreeName}
-              onChange={handleChange}
-              required
-            />
-          </div>
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nomineeName"
+                    placeholder="Enter nominee's name"
+                  />
+                </div>
 
-          <div className="form-group">
-            <label>Her Relationship to You:</label>
-            <input
-              type="text"
-              name="relationship"
-              value={formData.relationship}
-              onChange={handleChange}
-            />
-          </div>
+                <div className="mb-3">
+                  <textarea
+                    className="form-control"
+                    id="story"
+                    rows="5"
+                    placeholder="Why are you nominating her? Share her story..."
+                  ></textarea>
+                </div>
 
-          <div className="form-group">
-            <label>Share Her Story or Why She Inspires You:</label>
-            <textarea
-              name="story"
-              rows="5"
-              value={formData.story}
-              onChange={handleChange}
-              required
-            />
+                <button type="submit" className="btn btn-dark w-100">
+                  Submit Nomination
+                </button>
+              </form>
+            </div>
           </div>
-
-          <div className="form-group">
-            <label>One word that describes her:</label>
-            <input
-              type="text"
-              name="descriptionWord"
-              value={formData.descriptionWord}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group">
-            <label>Share her name on our Wall? (Yes/No):</label>
-            <input
-              type="text"
-              name="shareConsent"
-              value={formData.shareConsent}
-              onChange={handleChange}
-            />
-          </div>
-
-          <button type="submit">Submit Nomination</button>
-        </form>
+        </div>
       </div>
     </div>
   );

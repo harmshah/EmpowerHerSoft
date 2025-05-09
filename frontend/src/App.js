@@ -11,6 +11,9 @@ import SignaturePrograms from './components/SignaturePrograms';
 import WhoWeEmpower from './components/WhoWeEmpower';
 import WallOfHonor from './components/WallOfHonor';
 import JoinUs from './components/JoinUs';
+// index.js or App.js
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (

@@ -42,13 +42,15 @@ export default function SignaturePrograms() {
         Programs Built for Her
       </h1>
       {/* Featured Program Section with Image and Animation */}
-      <section className="featured-program">
-        <div className="featured-program-card">
-          <h4 className="featured-program-title">
-            FinHER: Financial Support on Her Terms
-          </h4>
+      <section className="about-section slide-in-right">
+        <img src={FinHerImage} alt="FinHER" className="section-image" />
 
-          <p className="featured-program-description">
+        <div className="section-content">
+          <h2 className="section-heading">
+            FinHER: Financial Support on Her Terms
+          </h2>
+
+          <p>
             Because every woman deserves the means to rise, without proving,
             justifying, or conforming.
           </p>
@@ -88,11 +90,6 @@ export default function SignaturePrograms() {
             to school at 50 — she is enough. FinHER is here to remind her that
             she never had to ask for permission.
           </p>
-        </div>
-
-        {/* Image Section */}
-        <div className="featured-program-image">
-          <img src={FinHerImage} alt="FinHER" className="featured-image" />
         </div>
       </section>
 
