@@ -19,6 +19,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+/frontend/.env  # Ignore the frontend .env file
 /backend/.env  # Ignore the backend .env file
 
 # logs

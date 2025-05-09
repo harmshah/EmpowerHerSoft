@@ -17,10 +17,36 @@ export default function WallOfHonor() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   fetch("https://honor-backend-17fo.onrender.com/api/wall-of-honor", {
+  //     // ↑ Replace with actual backend URL or use "/api/..." if proxied in Vercel
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(formData),
+  //   })
+  //     .then((res) => {
+  //       if (res.ok) {
+  //         alert("Nomination submitted successfully!");
+  //         setFormData({
+  //           yourName: "",
+  //           email: "",
+  //           honoreeName: "",
+  //           relationship: "",
+  //           story: "",
+  //           descriptionWord: "",
+  //           shareConsent: "",
+  //         });
+  //       } else {
+  //         alert("Failed to submit. Please try again.");
+  //       }
+  //     })
+  //     .catch(() => alert("Error submitting form."));
+  // };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("https://honor-backend-17fo.onrender.com/api/wall-of-honor", {
-      // ↑ Replace with actual backend URL or use "/api/..." if proxied in Vercel
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/wall-of-honor`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -43,7 +69,7 @@ export default function WallOfHonor() {
       })
       .catch(() => alert("Error submitting form."));
   };
-
+  
   return (
     <div className="honor-wrapper">
       <h1>Honoring the Women Who Raised Us.</h1>
