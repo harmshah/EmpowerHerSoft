@@ -6,7 +6,6 @@
 
 /* Page Title */
 .about-title {
-  font-family: cursive;
   color: black;
   text-align: center;
 }
@@ -53,7 +52,6 @@
 
 /* Section Headings */
 .section-heading {
-  font-family: cursive;
   color: black;
   margin-bottom: 1rem;
 }

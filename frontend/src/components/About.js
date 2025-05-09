@@ -8,7 +8,7 @@ import IMG4 from '../assets/Promise.jpg';
 export default function About() {
   return (
     <div className="about-page">
-      <h1 className="about-title">About Us</h1>
+      <h1 className="about-title">What Drives Us</h1>
 
       <section className="about-section slide-in-left">
         <img src={IMG1} alt="Vision" className="section-image" />

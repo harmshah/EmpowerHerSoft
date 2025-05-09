@@ -43,7 +43,7 @@ const coreValues = [
 export default function CoreValues() {
   return (
     <div className="core-container">
-      <h1 style={{ fontFamily: "cursive", color: "black", padding: "1rem" }}>Our Core Values</h1>
+      <h1>Our Core Values</h1>
       <div className="core-grid">
         {coreValues.map((value, index) => (
           <div key={index} className="core-card">

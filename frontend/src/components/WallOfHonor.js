@@ -46,14 +46,12 @@ export default function WallOfHonor() {
 
   return (
     <div className="honor-wrapper">
-      <h1 style={{ fontFamily: "cursive", color: "black", padding: "1rem" }}>
-        Wall of Honor
+      <h1>
+      Honoring the Women Who Raised Us.
       </h1>
 
       <div className="text-card about-container">
         <p className="description">
-          Honoring the Women Who Raised Us. <br />
-          <br />
           Some women never asked to lead, but they led with their love. Some
           women never had a stage, but their quiet strength lit the path. Some
           women may not know it, but they empowered us simply by believing in

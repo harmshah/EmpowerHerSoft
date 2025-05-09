@@ -3,9 +3,10 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import ScrollToTop from "./components/ScrollToTop";
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import About from './components/About';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
 import CoreValues from './components/CoreValues';
 import SignaturePrograms from './components/SignaturePrograms';
 import WhoWeEmpower from './components/WhoWeEmpower';
@@ -28,8 +29,8 @@ function App() {
         <Route path="/whoweempower" element={<WhoWeEmpower/>} />
         <Route path="/wallofhonor" element={<WallOfHonor/>} />
         <Route path="/joinus" element={<JoinUs/>} />
-        
       </Routes>
+      <Footer/>
     </div>
   );
 }

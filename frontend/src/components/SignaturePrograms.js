@@ -38,7 +38,7 @@ const programs = [
 export default function SignaturePrograms() {
   return (
     <div className="programs-container">
-      <h1 style={{ fontFamily: "cursive", color: "black", padding: "1rem" }}>
+      <h1>
         Programs Built for Her
       </h1>
       {/* Featured Program Section with Image and Animation */}
