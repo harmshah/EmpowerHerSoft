@@ -85,10 +85,11 @@ export default function SignaturePrograms() {
           </ul>
 
           <p>
-            We reject the idea that support must come with shame. Whether she is
-            rebuilding after divorce, launching a side business, or going back
-            to school at 50 — she is enough. FinHER is here to remind her that
-            she never had to ask for permission.
+            We reject the idea that support must come with shame. 
+            We do not ask women to prove they deserve help, we ask how we can stand beside them. 
+            Whether she is rebuilding after divorce, launching a side business, or going back
+            to school at 50 — she is enough. 
+            FinHER is here to remind her that she never had to ask for permission.
           </p>
         </div>
       </section>

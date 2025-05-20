@@ -16,19 +16,29 @@ export default function WhoWeEmpower() {
         <div className="empower-content">
           <h2 className="empower-heading">A Place for Every Woman</h2>
           <p style={{textAlign: "left"}}>
-            At Empower Her Soft, we believe that every woman, no matter her past, her pace, or her path,
-            deserves to rise with dignity and support. We don’t ask her to explain herself.
-            We don’t ask her to fit in. We simply make space — for her healing, her voice, her dreams, and her becoming.
+            At Empower Her Soft, we believe that every woman, no matter her past, her pace, or her path, deserves to rise with dignity and support. 
+            We don’t ask her to explain herself.
+            We don’t ask her to fit in. 
+            We simply make space — for her healing, her voice, her dreams, and her becoming.
           </p>
           <p style={{textAlign: "left"}}>
-            Women with disabilities, Indigenous women and women of all cultures, immigrants, refugees, and newcomers finding their footing,
-            divorced, separated, or widowed women rebuilding their lives, single mothers holding both love and responsibility,
-            women in their 30s, 40s, 50s+ starting over or just starting now, moms returning to work with courage and care,
+            We welcome: 
+            Women with disabilities, 
+            indigenous women and women of all cultures, 
+            immigrants, refugees, and newcomers finding their footing,
+            divorced, separated, or widowed women rebuilding their lives, 
+            single mothers holding both love and responsibility,
+            women in their 30s, 40s, 50s+ starting over or just starting now, 
+            moms returning to work with courage and care,
             and adult learners stepping into new careers with hope.
           </p>
           <p style={{textAlign: "left"}}>
-            Here, there is no “too late.” No “not enough.” No judgment. Only gentle strength, support, and sisterhood.
-            We are women. We understand the journey — the messy, miraculous, nonlinear journey. And we rise best when we rise together.
+            Here, there is no “too late.” 
+            No “not enough.” No judgment. 
+            Only gentle strength, support, and sisterhood.
+            We are women. 
+            We understand the journey — the messy, miraculous, nonlinear journey. 
+            And we rise best when we rise together.
           </p>
         </div>
       </div>
@@ -38,12 +48,18 @@ export default function WhoWeEmpower() {
         <div className="empower-content">
           <h2 className="empower-heading">Every Woman Belongs Here</h2>
           <p style={{textAlign: "left"}}>
-            We empower all women, including but never limited to: recent graduates entering the workforce, mothers returning after caregiving,
-            women reinventing careers in their 40s and beyond, single mothers balancing ambition and responsibility, women returning to education,
-            aspiring entrepreneurs, and late bloomers of all races and backgrounds.
+            We empower all women, including but never limited to: 
+            recent graduates entering the workforce, 
+            mothers returning after caregiving,
+            women reinventing careers in their 40s and beyond, 
+            single mothers balancing ambition and responsibility, 
+            women returning to education,
+            aspiring entrepreneurs and late bloomers,
+            women of all races and backgrounds and identities.
           </p>
           <p style={{textAlign: "left"}}>
-            This list is not exhaustive, because empowerment has no boundaries. More will be added, always.
+            This list is not exhaustive, because empowerment has no boundaries. 
+            More will be added, always.
             We see the beauty in every beginning, every comeback, and every unspoken strength of her.
           </p>
           <p style={{textAlign: "left"}} className="bold-highlight">

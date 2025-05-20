@@ -76,24 +76,19 @@ export default function WallOfHonor() {
 
       <div className="text-card about-container">
         <p className="description">
-          Honoring the Women Who Raised Us. Some women never asked to lead, but
-          they led with their love. Some women never had a stage, but their
-          quiet strength lit the path. Some women may not know it, but they
-          empowered us simply by believing in us, by saying “you can,” or by
-          standing beside us when no one else did. At Empower Her Soft, we honor
-          them. The mothers. The sisters. The mentors. The friends. The teachers
-          who saw something in us before we saw it in ourselves. The
-          grandmothers whose quiet courage became the foundation of our rise.
+          Honoring the Women Who Raised Us. 
+          Some women never asked to lead, but they led with their love. 
+          Some women never had a stage, but their quiet strength lit the path. 
+          Some women may not know it, but they empowered us simply by believing in us, by saying “you can,” or by standing beside us when no one else did. 
+          At Empower Her Soft, we honor them. 
+          The mothers. The sisters. The mentors. The friends. The teachers who saw something in us before we saw it in ourselves. 
+          The grandmothers whose quiet courage became the foundation of our rise.
           The coworkers who whispered, “You’ve got this.”
           <br/>
           <br/>
-          Board members and team leaders are invited to nominate these women,
-          the ones who lifted them up, shaped their journeys, and reminded them
-          they were never alone. These women become part of our living legacy,
-          woven into our story, named in our spaces, and held with the deepest
-          reverence. Because this is what women supporting women looks like, not
-          just in boardrooms or workshops, but in everyday gestures, whispered
-          encouragement, and generational strength passed hand to hand.
+          Board members and team leaders are invited to nominate these women, the ones who lifted them up, shaped their journeys, and reminded them they were never alone. 
+          These women become part of our living legacy, woven into our story, named in our spaces, and held with the deepest reverence. 
+          Because this is what women supporting women looks like, not just in boardrooms or workshops, but in everyday gestures, whispered encouragement, and generational strength passed hand to hand.
         </p>
       </div>
 
