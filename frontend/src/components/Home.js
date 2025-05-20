@@ -55,7 +55,7 @@ export default function Home() {
             That's why Empower Her Soft exists. <br />
             We are not a charity. <br />
             We are not a coaching platform. <br />
-            We are a space of soft power, strong women, and second chances.
+            We are a space of soft power, strong women, and second chances. <br />
             We support women as they rebuild confidence, reclaim their voice, and reconnect with who they are, and who they are becoming.
           </p>
           {/* <button className="scroll-button" onClick={scrollToNextSection}>
